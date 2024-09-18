@@ -136,6 +136,7 @@ int main() //função principal do sistema
 		printf("\t1 - Consultar nomes\n\n");  //"\t" responsavel pelo espaço antes da palavra
 		printf("\t2 - Registrar nomes\n\n");
 		printf("\t3 - Deletar nomes\n\n"); 
+		printf("\t4 - Sair do sistema\n\n");
 		printf("opcao:"); //Fim do menu
 	
 	scanf("%d", &opcao); //armazenando a escolha do usuário 
@@ -155,6 +156,12 @@ int main() //função principal do sistema
 		case 3:
 		deletar();
 		break;
+		
+		case 4:
+		printf("Obrigado por utilizar nosso sistema!\n");
+		return 0;
+		break;
+		
 		
 		default:
 		printf("Essa opcao nao esta disponivel!");
